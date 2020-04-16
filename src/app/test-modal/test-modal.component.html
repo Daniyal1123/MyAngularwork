@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <h4 class="modal-title">Hi there!</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Hello,danial</p>
+  <form (ngSubmit)="passBack(f)" #f="ngForm">
+    <input name="name" [(ngModel)]="user.name"  class="mt-10 form-control" type="text">
+    <input name="age" [(ngModel)]="user.age" class="mt-10 form-control" type="number">
+    <button  type="submit" class="btn btn-primary w-100">Pass back</button></form>
+</div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  </div>
