@@ -2,3 +2,9 @@
 /* @import "~bootstrap/dist/css/bootstrap.css"; */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+div.form-group.required>label:first-child:after{
+content: '*';
+color: red;
+padding-left: 5px;
+}

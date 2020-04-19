@@ -4,9 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AsynvalidatorformComponent } from './asynvalidatorform/asynvalidatorform.component';
 import { ModalandtableworkComponent } from './modalandtablework/modalandtablework.component';
 import { AppComponent } from './app.component';
+import { ReactiveformComponent } from './newmodule/reactiveform/reactiveform.component';
 const routes: Routes = [
   { path: 'async', component: AsynvalidatorformComponent },
-  { path: 'modal', component: ModalandtableworkComponent }
+  { path: 'modal', component: ModalandtableworkComponent },
+  { path: 'Register', component: ReactiveformComponent },
+  
+  
   
 ];
 

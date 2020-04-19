@@ -11,15 +11,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AsyncvalidatorDirective } from './asyncvalidator.directive';
 import { AsynvalidatorformComponent } from './asynvalidatorform/asynvalidatorform.component';
 import { ModalandtableworkComponent } from './modalandtablework/modalandtablework.component';
-import { AppRoutingModule } from './app-routing.module'; // <-- import the module
-
+import { AppRoutingModule } from './app-routing.module';
+import { ReactiveformComponent } from './newmodule/reactiveform/reactiveform.component'; // <-- import the module
+import { RegisterserviceService } from './newmodule/registerservice.service';
+import { ReactiveFormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
     TestModalComponent,
     AsyncvalidatorDirective,
     AsynvalidatorformComponent,
-    ModalandtableworkComponent
+    ModalandtableworkComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,
@@ -28,9 +31,10 @@ import { AppRoutingModule } from './app-routing.module'; // <-- import the modul
     HttpClientModule,
     NgxPaginationModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [AvoloxtestService],
+  providers: [AvoloxtestService,RegisterserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

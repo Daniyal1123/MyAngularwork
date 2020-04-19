@@ -14,7 +14,9 @@ export class AvoloxtestService {
   //   age: null,
    
   // };
+  local: any ;
   private url  = "https://jsonplaceholder.typicode.com/users"
+  // static RegisterserviceService: Provider;
   constructor(private http : HttpClient ) { }
 
 getjsonobject(): Observable<any>{
@@ -33,8 +35,7 @@ getuserobject(uname){
 
 setlocalstorage(formData)
 {
-    localStorage.setItem('key', JSON.stringify(formData.value));
-  console.log(formData.value)
+  localStorage.setItem('key', JSON.stringify(formData.value));
     
 }
 getlocalstorageitem(){

@@ -14,7 +14,8 @@ export class ModalandtableworkComponent implements OnInit {
   data;
   constructor(private modalService: NgbModal, private avolox : AvoloxtestService) {}
   p: number = 1;
-  ngOnInit() { 
+  ngOnInit() {
+
     this.user = this.avolox.getlocalstorageitem()
     console.log(this.user)
     this.data = this.avolox.getjsonobject().subscribe( res => {

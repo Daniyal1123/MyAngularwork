@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+<form [formGroup]="formmodule" autocomplete="off" (submit)="register()">
+<div class="form-group required">
+    <label >Username</label>
+    <input  class="form-control" formControlName="username">
+    <label  class="text-danger" *ngIf="formmodule.get('username').touched && formmodule.get('username').errors?.required">please fill </label>
+</div>
+<div class="form-group">
+    <label >email</label>
+    <input  class="form-control" formControlName="email">
+    <label  class="text-danger" *ngIf="formmodule.get('email').touched && formmodule.get('email').errors?.required">please fill email</label>
+    <label  class="text-danger" *ngIf="formmodule.get('email').errors?.email">email should be in correct form </label>
+
+</div >
+<div formGroupName="passwords"> <div class="form-group">
+<label >Password</label>
+<input  class="form-control" formControlName="password">
+<label  class="text-danger" *ngIf="formmodule.get('passwords.password').touched && formmodule.get('passwords.password').errors?.required">please fill password</label>
+<label  class="text-danger" *ngIf="formmodule.get('passwords.password').touched && formmodule.get('passwords.password').errors?.minlength">Length should be minimum 4</label>
+
+
+</div>
+<div class="form-group">
+<label >Confirm Password</label>
+<input  class="form-control" formControlName="confirmpassword">
+<label  class="text-danger" *ngIf="formmodule.get('passwords.confirmpassword').touched && formmodule.get('passwords.confirmpassword').errors?.required">required</label>
+<label  class="text-danger" *ngIf="formmodule.get('passwords.confirmpassword').touched && formmodule.get('passwords.confirmpassword').errors?.passwordmissmatch">Password should be same</label>
+
+</div></div>
+<div class="form-group">
+    <button type="submit" class="btn btn-primary" [disabled]="!formmodule.valid">Submit</button>
+</div>
+</form>        
+    </div>
+</div>
