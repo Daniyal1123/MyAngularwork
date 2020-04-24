@@ -1,0 +1,14 @@
+C:\Users\Daniyal\source\repos\coreapp\coreapp\bin\Debug\netcoreapp2.1\coreapp.deps.json
+C:\Users\Daniyal\source\repos\coreapp\coreapp\bin\Debug\netcoreapp2.1\coreapp.runtimeconfig.json
+C:\Users\Daniyal\source\repos\coreapp\coreapp\bin\Debug\netcoreapp2.1\coreapp.runtimeconfig.dev.json
+C:\Users\Daniyal\source\repos\coreapp\coreapp\bin\Debug\netcoreapp2.1\coreapp.dll
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.csprojAssemblyReference.cache
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.csproj.CoreCompileInputs.cache
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.RazorAssemblyInfo.cache
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.RazorAssemblyInfo.cs
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.AssemblyInfoInputs.cache
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.AssemblyInfo.cs
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.RazorTargetAssemblyInfo.cache
+C:\Users\Daniyal\source\repos\coreapp\coreapp\bin\Debug\netcoreapp2.1\coreapp.pdb
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.dll
+C:\Users\Daniyal\source\repos\coreapp\coreapp\obj\Debug\netcoreapp2.1\coreapp.pdb

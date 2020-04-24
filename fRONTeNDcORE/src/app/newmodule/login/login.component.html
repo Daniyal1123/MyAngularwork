@@ -1,0 +1,23 @@
+<div class="container">
+    <form  #form='ngForm' class="mb-4" autocomplete="off" (submit)="onsubmit(form)">
+
+        <div class="form-group required">
+            <label >Username</label>
+            <input  class="form-control" #UserName="ngModel" name="UserName" [(ngModel)]="formmodel.UserName" required>
+            <!-- <label  class="text-danger" *ngIf="formmodule.get('username').touched && formmodule.get('username').errors?.required">please fill </label>-->
+        </div>
+    
+    
+        
+        <div class="form-group required">
+            <label >Password</label>
+            <input  class="form-control" #Password="ngModel" name="Password" [(ngModel)]="formmodel.Password">
+            <!-- <label  class="text-danger" *ngIf="formmodule.get('username').touched && formmodule.get('username').errors?.required">please fill </label>-->
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid" >Login</button>
+        </div>
+        
+    </form>
+
+</div>
